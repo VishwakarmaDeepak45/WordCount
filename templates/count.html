@@ -1,0 +1,10 @@
+<h1>Count of Words</h1>
+<a href="{% url 'home' %}">Home</a>
+{{fulltext}}
+<br/><br/>
+<h1>Count of Repeated Characters</h1>
+{% for item , value in word_dictioary %}
+{{item}} = {{value}}
+<br/>
+{% endfor %}
+<br/>
